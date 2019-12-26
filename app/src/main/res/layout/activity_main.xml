@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+            <!--    logo image -->
+            <LinearLayout
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/radiation"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp">
+
+                </ImageView>
+
+            </LinearLayout>
+
+
+            <!--    main of 5 home buttons-->
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--            view event ll-->
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/ll_view_events_hp"
+                            android:layout_margin="7dp"
+                            android:clickable="true"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/bckgrond"
+                            android:elevation="5dp"
+                            android:layout_width="@dimen/homepage_btn_dime"
+                            android:layout_height="@dimen/homepage_btn_dime">
+
+                            <TextView
+                                android:text="View"
+                                android:textSize="@dimen/homepage_textsize"
+                                android:maxLines="1"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMaxTextSize="@dimen/homepage_textsize"
+                                android:textColor="#555"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+                            <TextView
+                                android:text="Events"
+                                android:textSize="@dimen/homepage_textsize"
+                                android:textColor="#555"
+                                android:textStyle="bold"
+                                android:maxLines="1"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMaxTextSize="@dimen/homepage_textsize"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/ll_add_event_hp"
+                            android:layout_margin="7dp"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:clickable="true"
+                            android:background="@drawable/bckgrond"
+                            android:elevation="5dp"
+                            android:layout_width="@dimen/homepage_btn_dime"
+                            android:layout_height="@dimen/homepage_btn_dime">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Add"
+                                android:maxLines="1"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMaxTextSize="@dimen/homepage_textsize"
+                                android:textColor="#555"
+                                android:textSize="@dimen/homepage_textsize"
+                                android:textStyle="bold">
+
+                            </TextView>
+                            <TextView
+                                android:text="Event"
+                                android:textSize="@dimen/homepage_textsize"
+                                android:textColor="#555"
+                                android:textStyle="bold"
+                                android:maxLines="1"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMaxTextSize="@dimen/homepage_textsize"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--            view event ll-->
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/ll_gallery_hp"
+                            android:layout_margin="7dp"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/bckgrond"
+                            android:clickable="true"
+                            android:elevation="5dp"
+                            android:layout_width="@dimen/homepage_btn_dime"
+                            android:layout_height="@dimen/homepage_btn_dime">
+
+                            <TextView
+                                android:text="Gallery"
+                                android:textSize="@dimen/homepage_textsize"
+                                android:textColor="#555"
+                                android:maxLines="1"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMaxTextSize="@dimen/homepage_textsize"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_margin="7dp"
+                            android:orientation="vertical"
+                            android:id="@+id/ll_notification_hp"
+                            android:gravity="center"
+                            android:background="@drawable/bckgrond"
+                            android:clickable="true"
+                            android:padding="10dp"
+                            android:elevation="5dp"
+                            android:layout_width="@dimen/homepage_btn_dime"
+                            android:layout_height="@dimen/homepage_btn_dime">
+
+                            <TextView
+                                android:text="Notification"
+                                android:maxLines="1"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMaxTextSize="@dimen/homepage_textsize"
+                                android:textColor="#555"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--            view event ll-->
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_margin="7dp"
+                            android:id="@+id/ll_request_hp"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/bckgrond"
+                            android:clickable="true"
+                            android:elevation="5dp"
+                            android:layout_width="@dimen/homepage_btn_dime"
+                            android:layout_height="@dimen/homepage_btn_dime">
+
+                            <TextView
+                                android:text="Request"
+                                android:maxLines="1"
+                                android:autoSizeTextType="uniform"
+                                android:autoSizeMaxTextSize="@dimen/homepage_textsize"
+                                android:textSize="@dimen/homepage_textsize"
+                                android:textColor="#555"
+                                android:textStyle="bold"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="bottom"
+        android:layout_height="match_parent">
+        <include layout="@layout/hmpg_btm_nav">
+
+        </include>
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

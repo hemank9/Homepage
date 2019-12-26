@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:id="@+id/hm_page_btm_nav"
+    android:paddingRight="10dp">
+
+
+    <LinearLayout
+        android:background="@drawable/bckgrnd_nav"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_home_nav"
+                android:clickable="true"
+                android:background="@drawable/bckgrond"
+                android:padding="10dp"
+                android:elevation="2dp"
+                android:layout_margin="3dp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_margin="5dp"
+                    android:tint="#333"
+                    android:src="@drawable/ic_home"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+
+                </ImageView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@drawable/bckgrond"
+                android:id="@+id/ll_add_event_nav"
+                android:padding="10dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:elevation="2dp"
+                android:layout_margin="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_margin="5dp"
+
+                    android:tint="#333"
+                    android:src="@drawable/ic_plus"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+
+                </ImageView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@drawable/bckgrond"
+                android:padding="10dp"
+                android:elevation="2dp"
+                android:layout_margin="3dp"
+                android:id="@+id/ll_profile_nav"
+                android:clickable="true"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+
+                    android:layout_margin="5dp"
+                    android:tint="#333"
+                    android:src="@drawable/ic_profile"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp">
+
+                </ImageView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>s
+</LinearLayout>
